@@ -2,8 +2,16 @@
     margin-top: 1em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     color: #C3D7F9;
+}
+.btnLabel{
+    user-select: none;
+    opacity: 0;
+
+    transition: all 0.3s ease;
+    transform: scale(0);
+    transform-origin: right;
 }
 .navBtn {
     margin-left: 1em;
@@ -20,6 +28,10 @@
     align-items: center;
 }
 
-.navBtn:hover{
+.btnContainer:hover .btnLabel{
+    opacity: 0.5;
+    transform: scale(1);
+}
+.navBtn:hover {
     opacity: 0.5;
 }

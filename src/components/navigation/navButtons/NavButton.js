@@ -1,11 +1,14 @@
 import React from 'react'
 import './NavButton.css'
 
+const btnClicked = (text)=>{
+    alert('clicked ' + text)
+}
 const NavButton = (props) => {
     return (
         <div className='btnContainer'>
-            <span>{props.text}</span>
-            <button className="navBtn">
+            <span className='btnLabel'>{props.text}</span>
+            <button className="navBtn" onClick={()=>{btnClicked(props.text)}}>
                 {props.icon}
             </button>
         </div>
