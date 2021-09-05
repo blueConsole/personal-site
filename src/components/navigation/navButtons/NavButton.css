@@ -1,0 +1,25 @@
+.btnContainer{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C3D7F9;
+}
+.navBtn {
+    margin-left: 1em;
+    font-size: x-large;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #C3D7F9;
+    border-radius: 100%;
+    background-color: #151B25;
+    color: #C3D7F9;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBtn:hover{
+    opacity: 0.5;
+}
